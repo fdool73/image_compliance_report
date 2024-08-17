@@ -149,7 +149,7 @@ def find_relevant_files(repo_name, branch_name):
 
         for item in tree_data.get('tree', []):
             path = item['path']
-            if path.lower().endswith(('docker-compose.yml', 'docker-compose.yaml', '.gitlab-ci.yml', '.github/workflows', '.concourse', 'pipeline')):
+            if path.lower().endswith(('docker-compose.yml', 'docker-compose.yaml', '.gitlab-ci.yml', '.github/workflows', 'pipeline')):
                 relevant_files.append(path)
                 
     except requests.exceptions.HTTPError as http_err:
