@@ -1,0 +1,8 @@
+{
+    "github_token": "",
+    "org_name": "",
+    "compliant_images": [
+        "audit-tool", "hardened_ubuntu"
+    ],
+    "graphql_query": "query($orgName: String!, $afterCursor: String) { organization(login: $orgName) { repositories(first: 50, after: $afterCursor) { edges { node { name isArchived defaultBranchRef { name } } } pageInfo { endCursor hasNextPage } } } }"
+}
