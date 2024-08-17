@@ -1,4 +1,4 @@
-# GitHub Repository Dockerfile Analysis for CPX Hardened Images
+# GitHub Repository Dockerfile Analysis for Compliant Images
 
 ## Overview
 
